@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    text-transform: capitalize;
+    line-height: 1.5;
+    font-size: large;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    text-align: center;
+}
+
+nav{
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 2px 0px 12px #eee;
+}
+@media (max-width:544px){
+    nav{
+        padding: 10px 50px;
+    }
+    li{
+        padding-left: 10px;
+    }
+}
+@media (max-width:460px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    padding: 2px;
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    background-color: #eee;
+    box-shadow: 2px 2px 5px #eee;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+/* ***** */
+
+header{
+    background-color: #ddd;
+    padding: 50px 150px;
+}
+
+h1{
+    margin-bottom: 30px;
+    font-size: larger;
+}
+
+span{
+    color: cornflowerblue;
+    font-size:20px;
+}
+
+/* ***** */
+
+.set{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    gap: 20px;
+}
+@media (max-width:847px){
+    .set{
+        flex-direction: column;
+    }
+}
+
+img{
+    width: 30%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-top: 20px;
+}
+
+/* ***** */
+
+#about{
+    display: flex;
+    background-color: #ddd;
+}
+
+.meeting{
+    width: 150px;
+    height: 150px;
+    margin: 0 50px;
+}
+
+.about{
+    text-align: left;
+}
+@media (max-width:847px){
+    .about{
+        text-align: center;
+    }
+}
+
+/* ***** */
+
+#services{
+    flex-wrap: wrap;
+}
+
+.red{
+    background-color: darkred;
+    padding: 5px 130px;
+}
+.blue{
+    background-color: darkcyan;
+    padding: 5px 130px;
+}
+.green{
+    background-color: darkolivegreen;
+    padding: 5px 110px;
+}
+@media (max-width:544px){
+    .red{
+        padding: 5px 60px;
+    }
+    .blue{
+        padding: 5px 60px;
+    }
+    .green{
+        padding: 5px 40px;
+    }
+}
+
+.num{
+    font-size: 72px;
+    color: white;
+}
+
+/* ***** */
+
+.centered{
+    font-size: larger;
+    margin: 0 auto;
+}
+
+.skills{
+    background-color: #ddd;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chart{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+
+.skill{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.html{
+    background-color: steelblue;
+    color: white;
+    width: 55%;
+    padding: 0px 10px;
+    text-align: right;
+    height: 30px;
+    position: relative;
+}
+.html::before{
+    content: "HTML";
+    color: #333;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    left: -90px;
+}
+.h2{
+    background-color: white;
+    width: 35%;
+    height: 30px;
+}
+
+.css{
+    background-color: steelblue;
+    color: white;
+    width: 65%;
+    padding: 0px 10px;
+    text-align: right;
+    height: 30px;
+    position: relative;
+}
+.css::before{
+    content: "CSS";
+    color: #333;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    left: -90px;
+}
+.c2{
+    background-color: white;
+    width: 25%;
+    height: 30px;
+}
+
+.js{
+    background-color: steelblue;
+    color: white;
+    width: 75%;
+    padding: 0px 10px;
+    text-align: right;
+    height: 30px;
+    position: relative;
+}
+.js::before{
+    content: "JavaScript";
+    color: #333;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    left: -90px;
+}
+.js2{
+    background-color: white;
+    width: 15%;
+    height: 30px;
+}
+
+.php{
+    background-color: steelblue;
+    color: white;
+    width: 60%;
+    padding: 0px 10px;
+    text-align: right;
+    height: 30px;
+    position: relative;
+}
+.php::before{
+    content: "PHP";
+    color: #333;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    left: -90px;
+}
+.php2{
+    background-color: white;
+    width: 30%;
+    height: 30px;
+}
+
+.py{
+    background-color: steelblue;
+    color: white;
+    width: 80%;
+    padding: 0px 10px;
+    text-align: right;
+    height: 30px;
+    position: relative;
+}
+.py::before{
+    content: "Python";
+    color: #333;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    left: -90px;
+}
+.py2{
+    background-color: white;
+    width: 10%;
+    height: 30px;
+}
+
+/* ***** */
+
+footer{
+    background-color: #333;
+    padding: 5px 100px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    color: white;
+}
